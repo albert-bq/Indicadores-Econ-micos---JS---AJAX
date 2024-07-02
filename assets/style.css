@@ -1,0 +1,128 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f8fa; /* Fondo claro similar al de GitHub */
+    color: #24292e; /* Color de texto oscuro para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Encabezado principal */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0366d6; /* Color azul de GitHub para el encabezado */
+    font-size: 2.5em;
+}
+
+/* Estilo para los encabezados secundarios */
+h2, h3 {
+    color: #2d2d2d; /* Color oscuro para encabezados secundarios */
+}
+
+/* Estilos para el bloque de instrucciones */
+.instructions {
+    margin-top: 20px;
+}
+
+/* Estilo para el código y bloques de código */
+pre {
+    background-color: #1e1e1e; /* Fondo oscuro para el código */
+    border: 1px solid #dcdcdc; /* Borde gris claro */
+    border-radius: 6px;
+    padding: 15px;
+    overflow: auto;
+    color: #dcdcdc; /* Texto claro para código */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+/* Resaltado de sintaxis */
+.token.keyword {
+    color: #c678dd; /* Palabras clave en morado */
+}
+
+.token.operator {
+    color: #56b6c2; /* Operadores en cyan */
+}
+
+.token.function {
+    color: #61afef; /* Nombres de funciones en azul claro */
+}
+
+.token.string {
+    color: #98c379; /* Cadenas de texto en verde claro */
+}
+
+.token.comment {
+    color: #5c6370; /* Comentarios en gris oscuro */
+}
+
+.token.number {
+    color: #d19a66; /* Números en naranja */
+}
+
+.token.variable {
+    color: #e5c07b; /* Variables en amarillo */
+}
+
+.token.class-name {
+    color: #e06c75; /* Nombres de clases en rojo */
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #0366d6; /* Color azul de GitHub para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado en el hover para enlaces */
+}
+
+/* Estilos para el contenedor del valor del indicador */
+#indicador-valor {
+    background-color: #f5f5f5; /* Fondo claro para el contenedor */
+    border: 1px solid #dcdcdc; /* Borde gris claro */
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #24292e; /* Fondo oscuro para el pie de página */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    margin-left: 10px;
+}
