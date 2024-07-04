@@ -1,8 +1,8 @@
 /* Estilos generales para el cuerpo del documento */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f6f8fa; /* Fondo claro similar al de GitHub */
-    color: #24292e; /* Color de texto oscuro para contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna */
+    background-color: #e5e5e5; /* Fondo gris claro para un estilo moderno */
+    color: #333333; /* Texto gris oscuro para contraste */
     margin: 0;
     padding: 0;
 }
@@ -10,45 +10,50 @@ body {
 /* Contenedor principal */
 .container {
     background-color: #ffffff; /* Fondo blanco para el contenedor */
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    padding: 20px;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto más moderno */
+    max-width: 900px;
+    padding: 30px;
     width: 90%;
-    margin: 20px auto;
+    margin: 30px auto;
+    border: 1px solid #dddddd; /* Borde gris claro */
 }
 
 /* Encabezado principal */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h1 {
-    color: #0366d6; /* Color azul de GitHub para el encabezado */
-    font-size: 2.5em;
+    color: #007acc; /* Color azul moderno */
+    font-size: 2.8em; /* Tamaño más grande para destacar el encabezado */
+    margin: 0;
 }
 
 /* Estilo para los encabezados secundarios */
 h2, h3 {
-    color: #2d2d2d; /* Color oscuro para encabezados secundarios */
+    color: #555555; /* Color gris oscuro para encabezados secundarios */
+    border-bottom: 2px solid #007acc; /* Línea de color azul para separar encabezados */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Estilos para el bloque de instrucciones */
 .instructions {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Estilo para el código y bloques de código */
 pre {
-    background-color: #1e1e1e; /* Fondo oscuro para el código */
-    border: 1px solid #dcdcdc; /* Borde gris claro */
-    border-radius: 6px;
-    padding: 15px;
+    background-color: #282c34; /* Fondo oscuro para el código */
+    border: 1px solid #444444; /* Borde oscuro */
+    border-radius: 8px;
+    padding: 20px;
     overflow: auto;
-    color: #dcdcdc; /* Texto claro para código */
+    color: #e5e5e5; /* Texto claro para código */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 0;
     white-space: pre-wrap;
     line-height: 1.6;
@@ -89,31 +94,90 @@ pre {
 
 /* Estilos para los enlaces */
 a {
-    color: #0366d6; /* Color azul de GitHub para enlaces */
+    color: #007acc; /* Color azul moderno para enlaces */
     text-decoration: none;
+    font-weight: bold; /* Negrita para enlaces */
 }
 
 a:hover {
     text-decoration: underline; /* Subrayado en el hover para enlaces */
 }
 
-/* Estilos para el contenedor del valor del indicador */
+/* Estilo para el contenedor del valor del indicador */
 #indicador-valor {
-    background-color: #f5f5f5; /* Fondo claro para el contenedor */
-    border: 1px solid #dcdcdc; /* Borde gris claro */
-    padding: 15px;
+    background-color: #f9f9f9; /* Fondo muy claro para el contenedor */
+    border: 1px solid #dddddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
     margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados para el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto más moderno */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para los campos de entrada del formulario */
+form input[type="text"],
+form select,
+form button {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno para comodidad */
+    margin: 10px 0; /* Espacio entre elementos del formulario */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #dddddd; /* Borde gris claro */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    font-size: 1em; /* Tamaño de fuente para mejor legibilidad */
+}
+
+/* Estilo para los campos de entrada con foco */
+form input[type="text"]:focus,
+form select:focus {
+    border-color: #007acc; /* Borde azul al estar en foco */
+    outline: none; /* Elimina el borde por defecto del navegador */
+}
+
+/* Estilo para el botón de enviar */
+form button {
+    background-color: #007acc; /* Fondo azul para el botón */
+    color: #ffffff; /* Texto blanco en el botón */
+    border: none; /* Elimina el borde por defecto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor para el botón */
+    padding: 10px; /* Espaciado interno del botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para el botón de enviar en hover */
+form button:hover {
+    background-color: #005fa3; /* Fondo azul oscuro en hover */
+}
+
+/* Estilo para el contenedor de resultados */
+#indicator-result {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #dddddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro para los resultados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #24292e; /* Fondo oscuro para el pie de página */
-    color: #ffffff; /* Texto blanco */
+    background-color: #333333; /* Fondo oscuro para el pie de página */
+    color: #f5f5f5; /* Texto claro */
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior del pie de página */
 }
 
 footer p {
